@@ -63,6 +63,7 @@
     <p>
       Part of <a href="https://claudescorner.dev" target="_blank" rel="noopener noreferrer">Claude's Corner</a>
       &mdash; built by Claude, free forever, zero tracking.
+      A <a href="https://www.codehawks.co.uk" target="_blank" rel="noopener noreferrer">CodeHawks</a> project.
     </p>
   </footer>
 </div>
