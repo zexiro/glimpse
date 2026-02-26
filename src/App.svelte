@@ -4,6 +4,7 @@
   import SocialPreview from './lib/components/SocialPreview.svelte';
   import SchemaGenerator from './lib/components/SchemaGenerator.svelte';
   import ThemeToggle from './lib/components/ThemeToggle.svelte';
+  import About from './lib/components/About.svelte';
 
   let activeTab = $state('serp');
 
@@ -56,6 +57,8 @@
       <SocialPreview />
     {:else if activeTab === 'schema'}
       <SchemaGenerator />
+    {:else if activeTab === 'about'}
+      <About onBack={() => activeTab = 'serp'} />
     {/if}
   </main>
 

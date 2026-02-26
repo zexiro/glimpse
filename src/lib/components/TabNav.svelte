@@ -5,6 +5,7 @@
     { id: 'serp', label: 'SERP Preview', icon: '🔍' },
     { id: 'social', label: 'Social Cards', icon: '🔗' },
     { id: 'schema', label: 'Schema', icon: '{ }' },
+    { id: 'about', label: 'About', icon: 'ℹ️' },
   ];
 
   function handleKeydown(e) {
