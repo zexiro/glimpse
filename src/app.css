@@ -1,0 +1,97 @@
+/* Glimpse — Global Styles */
+
+:root {
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+  /* Light mode */
+  --bg: #F8F9FB;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #F1F3F5;
+  --text: #1A1D23;
+  --text-muted: #5F6672;
+  --text-faint: #9CA3AF;
+  --border: #E2E5EA;
+  --border-light: #ECEEF1;
+  --accent: #2563EB;
+  --accent-hover: #1D4FD7;
+  --accent-soft: #EFF6FF;
+  --success: #16A34A;
+  --success-soft: #F0FDF4;
+  --warning: #D97706;
+  --warning-soft: #FFFBEB;
+  --danger: #DC2626;
+  --danger-soft: #FEF2F2;
+  --shadow: rgba(0, 0, 0, 0.06);
+  --shadow-lg: rgba(0, 0, 0, 0.1);
+
+  --transition-fast: 150ms ease;
+  --transition: 250ms ease;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --radius-lg: 12px;
+}
+
+[data-theme="dark"] {
+  --bg: #0F1117;
+  --bg-surface: #1A1D27;
+  --bg-elevated: #242833;
+  --text: #E4E7EC;
+  --text-muted: #9CA3AF;
+  --text-faint: #6B7280;
+  --border: #2D3241;
+  --border-light: #232836;
+  --accent: #3B82F6;
+  --accent-hover: #60A5FA;
+  --accent-soft: #172554;
+  --success: #22C55E;
+  --success-soft: #052E16;
+  --warning: #F59E0B;
+  --warning-soft: #422006;
+  --danger: #EF4444;
+  --danger-soft: #450A0A;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-lg: rgba(0, 0, 0, 0.4);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
